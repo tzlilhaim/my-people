@@ -1,41 +1,58 @@
-#container{
-    display: grid;
-    grid-template-rows: 1fr 10fr;
-    height: 100vh;
-    width: 100vw;
+#container {
+  display: grid;
+  grid-template-rows: 1fr 10fr;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(file:///Users/tzlilhaim/code/bootcamp/projects/my-people-project/abstract-wallpaper-ii.jpg);
+  background-size: cover;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-#data>ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
-    align-content: center;
+#data > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+  align-content: center;
 }
 
-.person{
-    padding: 10px;
-    background-color: lightgray;
-    border-radius: 5px;
-    max-width: 350px;
-    box-shadow: 5px 5px gray;
-    margin-bottom: 5px;
+.person {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.74);
+  border-radius: 5px;
+  max-width: 400px;
+  box-shadow: 5px 5px 5px black;
+  margin-bottom: 5px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
-.person:hover{
-    background-color: lightblue;
+.person:hover {
+  background-color: white;
+  box-shadow: 5px 5px rgb(112, 69, 50);
 }
 
-.email-addr{
-    color: darkcyan;
-    display: inline;
+.email-addr {
+  color: rgb(26, 77, 126);
+  display: inline;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
 }
 
-.email-addr:hover{
-    color: darkslateblue;
-    cursor: pointer;
-    text-decoration: underline;
+.email-addr:hover {
+  color: darkcyan;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.full-name {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.full-name:hover {
+  color: darkcyan;
+  cursor: pointer;
 }
