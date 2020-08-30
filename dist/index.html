@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My People</title>
-    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.css" >
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/scripts/font-awesome/css/font-awesome.css" >
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
   </head>
   <body>
     <div id="container">
@@ -13,27 +13,33 @@
       <div id="data"></div>
     </div>
     <script id="user-template" type="text/x-handlebars-template">
-      <ul>
-        {{#each results}}
-          <div class="person">
-            <div class="full-name">
-              <i class="fa fa-user"></i>
-              <span>
-                {{this.name.title}} {{this.name.first}} {{this.name.last}}
-              </span>
-            </div>
-            <div class="email-addr">
-              <i class="fa fa-envelope"></i>
-              <span>
-                {{this.email}}
-              </span>
-            </div>
+      {{#each results}}
+        <div class="person">
+          <div
+            class="full-name"
+            title="{{name.title}} {{name.first}} {{name.last}}"
+          >
+            <i class="fa fa-user"></i>
+            <span>
+              {{name.title}} {{name.first}} {{name.last}}
+            </span>
           </div>
-        {{/each}}
-      </ul>
+          <div class="email-addr" title="{{email}}">
+            <i class="fa fa-envelope"></i>
+            <span>
+              {{email}}
+            </span>
+          </div>
+        </div>
+      {{/each}}
     </script>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script id="error-template" type="text/x-handlebars-template">
+      <p>
+        {{text}}
+      </p>
+    </script>
+    <script src="/scripts/jquery/dist/jquery.js"></script>
+    <script src="/scripts/handlebars/dist/handlebars.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
