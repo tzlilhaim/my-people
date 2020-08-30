@@ -3,7 +3,7 @@
   grid-template-rows: 1fr 10fr;
   height: 100vh;
   width: 100vw;
-  background-image: url(file:///Users/tzlilhaim/code/bootcamp/projects/my-people-project/abstract-wallpaper-ii.jpg);
+  background-image: url(./abstract-wallpaper-ii.jpg);
   background-size: cover;
 }
 
